@@ -76,11 +76,11 @@ body {
 }
 
 .page-1 {
-    background-image: url('assets/img/background.jpg');
+    background-image: url('https://raw.githubusercontent.com/Ayanam1Re11/Ayanam1Re11.github.io/main/ayanami.jpgg'); /* 修改为新的图片链接 */
 }
 
 .page-2 {
-    background-image: url('assets/img/background.jpg');
+    background-image: url('https://raw.githubusercontent.com/Ayanam1Re11/Ayanam1Re11.github.io/main/ayanami.jpgg'); /* 修改为新的图片链接 */
     opacity: 0;
 }
 

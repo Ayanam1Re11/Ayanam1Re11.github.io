@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>蒋铭远的科研与技术展示</title>
+    <title>IGEM面试</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,11 +12,13 @@
             background-color: #f4f7fb;
             color: #333;
             box-sizing: border-box;
+            background-image: url('https://raw.githubusercontent.com/Ayanam1Re11/Ayanam1Re11.github.io/main/ayanami.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
-
-        /* 页面头部 */
         header {
-            background: linear-gradient(135deg, #4CAF50, #2E8B57);
+            background: rgba(147, 112, 219, 0.6); 
             padding: 40px 0;
             text-align: center;
             color: white;
@@ -28,7 +30,7 @@
 
         /* 导航栏 */
         nav {
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.6); 
             padding: 10px 0;
             text-align: center;
         }
@@ -38,16 +40,18 @@
             padding: 14px 20px;
             font-size: 1.1em;
             display: inline-block;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #555;
+            background-color: rgba(85, 85, 85, 0.8); 
+            transform: scale(1.1); 
         }
 
         /* 内容部分 */
         section {
             display: none;
             padding: 40px;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.9); 
             margin: 30px auto;
             border-radius: 8px;
             max-width: 900px;
@@ -71,9 +75,11 @@
             cursor: pointer;
             border-radius: 5px;
             margin-top: 20px;
+            transition: transform 0.3s ease;
         }
         .button:hover {
             background-color: #45a049;
+            transform: scale(1.05); 
         }
 
         /* 论文表格 */
@@ -93,8 +99,15 @@
         table tr:hover {
             background-color: #f9f9f9;
         }
-
-        /* 动态过渡效果 */
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img:hover {
+            transform: scale(1.1); 
+        }
         .fade-in {
             animation: fadeIn 1s ease-in-out;
         }
@@ -114,15 +127,20 @@
     <!-- 导航栏 -->
     <nav>
         <a href="javascript:void(0);" onclick="showSection('about')">关于我</a>
-        <a href="javascript:void(0);" onclick="showSection('research')">科研与论文</a>
+        <a href="javascript:void(0);" onclick="showSection('research')">科研与近期论文阅读</a>
         <a href="javascript:void(0);" onclick="showSection('contact')">联系方式</a>
     </nav>
 
     <!-- 关于我 -->
     <section id="about">
         <h2>关于我</h2>
-        <p>你好，我是蒋铭远，计算机科学与技术专业学生，专注于深度学习和生物信息学的交叉领域。我正在学习李宏毅老师的深度学习课程，并对合成生物学充满热情。</p>
+        <p>你好，我是蒋铭远，海南大学24级计算机科学与技术专业学生，专注于深度学习和生物信息学的交叉领域。我正在学习李宏毅老师的深度学习课程，并对合成生物学充满热情。</p>
         <p>我拥有一定的前端开发能力，并且对数据分析和机器学习有浓厚兴趣。在团队合作中，我总是能积极互动，帮助团队成员完成任务。</p>
+        <p>专业背景扎实：作为计算机科学与技术专业的学生，掌握了深度学习、数据分析等核心技术，并具备前端开发能力。</p>
+        <p>深厚的技术基础：熟悉深度学习的基础，阅读大量相关文献，积累了实际的科研经验。</p>
+        <p>跨领域兴趣与能力：对生物信息学、合成生物学等交叉学科充满兴趣，能够将计算机技术与生物学相结合，探索创新性解决方案。</p>
+        <p>团队合作精神：具有良好的团队协作能力，能够积极互动，帮助团队成员解决问题，推动项目进展。</p>
+        <p>快速学习与适应能力：在新的领域或技术上具有快速学习和适应的能力，能够迅速掌握必要的技能并运用到实际项目中。</p>
         <button class="button" onclick="showSection('research')">查看我的科研与论文</button>
     </section>
 
@@ -161,7 +179,7 @@
                 </tr>
             </tbody>
         </table>
-        <button class="button" onclick="showSection('contact')">查看我的联系方式</button>
+        <button class="button" onclick="showSection('contact')">查看联系方式</button>
     </section>
 
     <!-- 联系方式 -->
@@ -169,31 +187,21 @@
         <h2>联系方式</h2>
         <p>你可以通过以下方式联系我：</p>
         <ul>
-            <li>手机：13913138940</li>
-            <li>邮箱：jiangmingyuan@example.com</li>
-            <li>LinkedIn：[我的LinkedIn](https://www.linkedin.com/in/jiangmingyuan)</li>
+            <li><strong>电子邮箱：</strong>jiangmingyuan17@gmail.com</li>
+            <li><strong>GitHub：</strong><a href="https://github.com/Ayanam1Re11" target="_blank">github.com/Ayanam1Re11</a></li>
         </ul>
         <button class="button" onclick="showSection('about')">返回关于我</button>
     </section>
 
-    <!-- JavaScript -->
     <script>
         function showSection(sectionId) {
             // 隐藏所有section
-            var sections = document.querySelectorAll('section');
-            sections.forEach(function(section) {
+            document.querySelectorAll('section').forEach(function(section) {
                 section.classList.remove('active');
             });
-
-            // 显示当前选择的section
-            var sectionToShow = document.getElementById(sectionId);
-            sectionToShow.classList.add('active');
+            // 显示目标section
+            document.getElementById(sectionId).classList.add('active');
         }
-
-        // 初始加载时显示“关于我”部分
-        window.onload = function() {
-            showSection('about');
-        };
     </script>
 
 </body>
