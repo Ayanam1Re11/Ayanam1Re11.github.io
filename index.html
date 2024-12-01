@@ -27,8 +27,6 @@
             font-size: 3em;
             margin: 0;
         }
-
-        /* 导航栏 */
         nav {
             background-color: rgba(51, 51, 51, 0.6); 
             padding: 10px 0;
@@ -81,8 +79,6 @@
             background-color: #45a049;
             transform: scale(1.05); 
         }
-
-        /* 论文表格 */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -122,12 +118,13 @@
     <header>
         <h1>蒋铭远 | 计算机科学与技术</h1>
         <p>深度学习与生物学的跨界探索</p>
+        <p>本页面是基于GitHub page下 完全自主编写的个人前端展示网站</p>
     </header>
 
     <!-- 导航栏 -->
     <nav>
         <a href="javascript:void(0);" onclick="showSection('about')">关于我</a>
-        <a href="javascript:void(0);" onclick="showSection('research')">科研与近期论文阅读</a>
+        <a href="javascript:void(0);" onclick="showSection('research')">科研学习与文献分享</a>
         <a href="javascript:void(0);" onclick="showSection('contact')">联系方式</a>
     </nav>
 
@@ -135,19 +132,21 @@
     <section id="about">
         <h2>关于我</h2>
         <p>你好，我是蒋铭远，海南大学24级计算机科学与技术专业学生，专注于深度学习和生物信息学的交叉领域。我正在学习李宏毅老师的深度学习课程，并对合成生物学充满热情。</p>
-        <p>我拥有一定的前端开发能力，并且对数据分析和机器学习有浓厚兴趣。在团队合作中，我总是能积极互动，帮助团队成员完成任务。</p>
+        <p>关于科研研究，我目前在张子龙教授的课题组中，与干实验组的模型构建与准确预测方面正好完全相符。
+        <p>对于igem竞赛，我希望先加入干实验组的wiki编写方向里，在自我技术成熟后尝试为未来研究的深度学习相关的内容做贡献</p>
         <p>专业背景扎实：作为计算机科学与技术专业的学生，掌握了深度学习、数据分析等核心技术，并具备前端开发能力。</p>
         <p>深厚的技术基础：熟悉深度学习的基础，阅读大量相关文献，积累了实际的科研经验。</p>
         <p>跨领域兴趣与能力：对生物信息学、合成生物学等交叉学科充满兴趣，能够将计算机技术与生物学相结合，探索创新性解决方案。</p>
         <p>团队合作精神：具有良好的团队协作能力，能够积极互动，帮助团队成员解决问题，推动项目进展。</p>
+        <p>过去与李俊飞学长组队比赛，相互交流，获得了李俊飞学长的高度赞扬</p>
         <p>快速学习与适应能力：在新的领域或技术上具有快速学习和适应的能力，能够迅速掌握必要的技能并运用到实际项目中。</p>
-        <button class="button" onclick="showSection('research')">查看我的科研与论文</button>
+        <button class="button" onclick="showSection('research')">查看我的科研学习与文献分享</button>
     </section>
 
     <!-- 科研与论文 -->
     <section id="research">
-        <h2>科研与论文</h2>
-        <p>以下是我对几篇深度学习与生物学应用相关的论文总结：</p>
+        <h2>科研学习与文献分享</h2>
+        <p>以下是我近期在课题组中的几篇文献分享：</p>
 
         <table>
             <thead>
@@ -189,6 +188,9 @@
         <ul>
             <li><strong>电子邮箱：</strong>jiangmingyuan17@gmail.com</li>
             <li><strong>GitHub：</strong><a href="https://github.com/Ayanam1Re11" target="_blank">github.com/Ayanam1Re11</a></li>
+        </ul><p>下面是我导的个人主页</p>
+        <ul>
+            <li><strong>个人主页：</strong>http://www.bioai-lab.com/info/zhangzilong</li>
         </ul>
         <button class="button" onclick="showSection('about')">返回关于我</button>
     </section>
